@@ -1610,7 +1610,7 @@
 	)
 	(rectangle
 		(start 63.5 86.36)
-		(end 168.91 88.9)
+		(end 170.18 88.9)
 		(stroke
 			(width 0)
 			(type default)
@@ -1620,20 +1620,22 @@
 		)
 		(uuid ad875c09-3f61-4963-ac56-6c5ecb76820f)
 	)
-	(text "VIN 3.8V to 32V\n2A Continuous Output Current"
+	(text "VIN 3.8V to 32V\n2A Continuous Output Current\nR1=R2*(Vout/0.8V-1)"
 		(exclude_from_sim no)
-		(at 78.994 83.058 0)
+		(at 63.5 81.534 0)
 		(effects
 			(font
+				(face "KiCad Font")
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
 		(uuid "d20dd632-c7d0-48e5-a22a-badc7cedc066")
 	)
-	(text_box "Vout(V) 		JP1		R1(kΩ)	R2(kΩ)	L(µH)	C1(µF)	C2(µF)	C3(nF)	C4(pF)\nAP63203	3.3		close	NaN		NaN		3.9		10		2x22	100		NaN\nAP63205	5.0		close	NaN		NaN		4.7		10		2x22	100		NaN\n\nAP63200 1.2 	open	30.9 	62 		2.2 	10 		2x22 	100 	100\n		1.5 	open	54.2 	62 		2.2 	10 		2x22 	100 	100\n		1.8 	open	77.5 	62 		3.3 	10 		2x22 	100 	100\n		2.5 	open	131 	62 		3.3 	10 		2x22 	100 	100\n		3.3 	open	182 	62 		6.8 	10 		2x22 	100 	100\n		5.0		open	157 	30 		10 		10 		2x22 	100 	100\n		12.0	open	249 	18 		10 		10 		2x22 	100 	56\n"
+	(text_box "Vout(V) 		JP1		R1(kΩ)	R2(kΩ)	L(µH)	C1(µF)	C2(µF)	C3(nF)	C4(pF)\nAP63203	3.3		close	NaN		NaN		3.9		10		2x22	100		NaN\nAP63205	5.0		close	NaN		NaN		4.7		10		2x22	100		NaN\n\nAP63200 1.2 	open	30.9 	62 		2.2 	10 		2x22 	100 	100\n		1.5 	open	54.2 	62 		2.2 	10 		2x22 	100 	100\n		1.8 	open	77.5 	62 		3.3 	10 		2x22 	100 	100\n		2.5 	open	131 	62 		3.3 	10 		2x22 	100 	100\n		3.3 	open	182 	62 		6.8 	10 		2x22 	100 	100\n		5.0		open	157 	30 		10 		10 		2x22 	100 	100\n		9.0		open	205		20		10		10		2x22	100		68?\n		12.0	open	249 	18 		10 		10 		2x22 	100 	56\n"
 		(exclude_from_sim no)
 		(at 63.5 86.36 0)
-		(size 105.41 24.13)
+		(size 106.68 27.94)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -1649,6 +1651,26 @@
 			(justify left top)
 		)
 		(uuid "130b2f19-6886-4b00-8e9d-ee7f62fb11d5")
+	)
+	(text_box "Vout	R2(k)	R1k(ber)	R1k E96	Vout	Fehler\n\n3.3		11.5	35.9375		35.7	3.2835	−0.0165\n5.0		20.0	105			105		5.00	0\n9.0		20.0	205			205		9.00	0\n12.0	10.0	140			140		12.0	0\n15.0	11.5	205			204		15.04	+0.400\n20.0	10.0	240			240		20.00	0\n24.0	10.0	290			290		23.99	-0."
+		(exclude_from_sim no)
+		(at 93.98 116.84 0)
+		(size 66.04 20.32)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "6f8be354-a1ef-496d-8fee-9cebe8c1101a")
 	)
 	(junction
 		(at 135.89 58.42)
